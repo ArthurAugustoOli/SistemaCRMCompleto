@@ -1,0 +1,85 @@
+/* Custom styles for StyleHub e-commerce */
+
+/* Global styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Product card hover effect */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button hover effects */
+.btn-dark {
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #343a40;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom form controls */
+.form-control:focus,
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.25);
+  border-color: #343a40;
+}
+
+/* Custom breadcrumb */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+/* Custom tabs */
+.nav-tabs .nav-link {
+  color: #6c757d;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 1rem;
+}
+
+.nav-tabs .nav-link.active {
+  color: #212529;
+  background-color: transparent;
+  border-bottom: 2px solid #212529;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+  border-bottom: 2px solid #6c757d;
+}
+
+/* Custom badge */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Quantity input */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Footer links hover effect */
+footer a:hover {
+  color: #212529 !important;
+}
+
+/* Custom cursor for image thumbnails */
+.cursor-pointer {
+  cursor: pointer;
+}
